@@ -10,11 +10,11 @@ public class Main {
 
         NamedPoint2D point;
         List<NamedPoint2D> point2DList = new ArrayList<>();
-        int x = 0,y = 0;
-        String name = "?";
+        int x,y;
+        String name;
         Scanner consoleInput = new Scanner(System.in);
 
-        for(int i=0;i<3;i++) {
+        for(int i=0;i<2;i++) {
             System.out.println("Podaj nazwę punktu:");
             name = consoleInput.nextLine();
             System.out.println("Podaj x:");
@@ -25,7 +25,7 @@ public class Main {
             point2DList.add(point);
         }
 
-        for(int i=0;i<3;i++) {
+        for(int i=0;i<2;i++) {
             System.out.println("Punkt "+(i+1)+":");
             System.out.println(point2DList.get(i).toString());
         }
